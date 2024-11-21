@@ -9,7 +9,7 @@ const cors = require('cors');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors({ origin: 'https://bajajfinal-qehboq9t6-priyanshus-projects-b22a5ffb.vercel.app/' }));
+app.use(cors({ origin: 'https://bajajfinal-qehboq9t6-priyanshus-projects-b22a5ffb.vercel.app' }));
 // Prime number checking function
 function isPrime(num) {
     if (num <= 1) return false;
