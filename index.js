@@ -2,10 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const app = express();
+const cors = require('cors');
+
+
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(cors({ origin: 'https://bajaj-backend-f7en.onrender.com' }));
 // Prime number checking function
 function isPrime(num) {
     if (num <= 1) return false;
